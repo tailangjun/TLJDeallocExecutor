@@ -7,14 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "NSObject+Extend.h"
-#import "WeakObserver.h"
-
-static void *kObserverKey = &kObserverKey;
+#import "TestObserver.h"
 
 @interface ViewController ()
-@property(nonatomic, strong) NSObject *observer;
-@property(nonatomic, strong) WeakObserver *weakObserver;
 @end
 
 @implementation ViewController
@@ -22,15 +17,10 @@ static void *kObserverKey = &kObserverKey;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    TestObserver *observer = [[TestObserver alloc] init];
+    observer = nil;
     
-    _observer = [[NSObject alloc] init];
-    _weakObserver = [[WeakObserver alloc] initWithObserver:_observer];
-    
-    __unsafe_unretained typeof(self) weakSelf = self;
-    [_observer attachForKey:kObserverKey executeAtDealloc:^{
-        weakSelf.weakObserver = nil;
-    }];
-    
-    _observer = nil;
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationKey object:nil];
 }
 @end

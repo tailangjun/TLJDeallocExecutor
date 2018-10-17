@@ -15,7 +15,7 @@
 		B43A3F8521760CA500DEBCB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A3F8421760CA500DEBCB4 /* main.m */; };
 		B43A3F9021760D9100DEBCB4 /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A3F8C21760D9100DEBCB4 /* NSObject+Extend.m */; };
 		B43A3F9121760D9100DEBCB4 /* TLJDeallocExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A3F8D21760D9100DEBCB4 /* TLJDeallocExecutor.m */; };
-		B43A3F942176112400DEBCB4 /* WeakObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A3F932176112400DEBCB4 /* WeakObserver.m */; };
+		B44526FC2176B729001BB9D3 /* TestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B44526FB2176B729001BB9D3 /* TestObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +33,8 @@
 		B43A3F8D21760D9100DEBCB4 /* TLJDeallocExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLJDeallocExecutor.m; sourceTree = "<group>"; };
 		B43A3F8E21760D9100DEBCB4 /* TLJDeallocExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLJDeallocExecutor.h; sourceTree = "<group>"; };
 		B43A3F8F21760D9100DEBCB4 /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
-		B43A3F922176112400DEBCB4 /* WeakObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakObserver.h; sourceTree = "<group>"; };
-		B43A3F932176112400DEBCB4 /* WeakObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakObserver.m; sourceTree = "<group>"; };
+		B44526FA2176B729001BB9D3 /* TestObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObserver.h; sourceTree = "<group>"; };
+		B44526FB2176B729001BB9D3 /* TestObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 				B43A3F8021760CA500DEBCB4 /* LaunchScreen.storyboard */,
 				B43A3F8321760CA500DEBCB4 /* Info.plist */,
 				B43A3F8421760CA500DEBCB4 /* main.m */,
-				B43A3F922176112400DEBCB4 /* WeakObserver.h */,
-				B43A3F932176112400DEBCB4 /* WeakObserver.m */,
+				B44526FA2176B729001BB9D3 /* TestObserver.h */,
+				B44526FB2176B729001BB9D3 /* TestObserver.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -164,10 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44526FC2176B729001BB9D3 /* TestObserver.m in Sources */,
 				B43A3F7A21760CA400DEBCB4 /* ViewController.m in Sources */,
 				B43A3F8521760CA500DEBCB4 /* main.m in Sources */,
 				B43A3F9121760D9100DEBCB4 /* TLJDeallocExecutor.m in Sources */,
-				B43A3F942176112400DEBCB4 /* WeakObserver.m in Sources */,
 				B43A3F7721760CA400DEBCB4 /* AppDelegate.m in Sources */,
 				B43A3F9021760D9100DEBCB4 /* NSObject+Extend.m in Sources */,
 			);

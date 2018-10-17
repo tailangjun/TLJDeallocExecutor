@@ -11,6 +11,5 @@
 typedef void (^TLJDeallocExecutorBlock)(void);
 
 @interface TLJDeallocExecutor : NSObject
-// 注意: 需要使用 __unsafe_unretained来修饰 weakSelf，而不可用 __weak
 - (instancetype)initWithBlock:(TLJDeallocExecutorBlock)block;
 @end
